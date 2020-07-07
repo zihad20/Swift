@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DIo-Tq-IlL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_Flag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmY-6F-ibP">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lmY-6F-ibP" secondAttribute="height" multiplier="2:1" id="faj-fp-Kf2"/>
+                                    <constraint firstAttribute="height" constant="100" id="msp-BI-DmI"/>
+                                    <constraint firstAttribute="width" constant="200" id="xEg-aP-bZU"/>
+                                </constraints>
+                                <state key="normal" title="hh" image="bangladesh"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7sY-bJ-3Nt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dco-k9-1mY">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Sp-BZ-eSO"/>
+                                    <constraint firstAttribute="height" constant="100" id="Bqt-HY-y7f"/>
+                                    <constraint firstAttribute="width" secondItem="dco-k9-1mY" secondAttribute="height" multiplier="2:1" id="mZ4-Vu-L1o"/>
+                                </constraints>
+                                <state key="normal" image="bangladesh"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DgF-je-xhu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJR-rZ-e1e">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="S2C-p8-xgg"/>
+                                    <constraint firstAttribute="height" constant="100" id="YZe-9D-853"/>
+                                    <constraint firstAttribute="width" secondItem="lJR-rZ-e1e" secondAttribute="height" multiplier="2:1" id="dVM-i4-BtM"/>
+                                </constraints>
+                                <state key="normal" image="bangladesh"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yjz-SJ-dTb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dco-k9-1mY" firstAttribute="top" secondItem="lJR-rZ-e1e" secondAttribute="bottom" constant="30" id="2eE-hR-gCW"/>
+                            <constraint firstItem="lmY-6F-ibP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6bF-4z-NV6"/>
+                            <constraint firstItem="dco-k9-1mY" firstAttribute="centerX" secondItem="lJR-rZ-e1e" secondAttribute="centerX" id="9x7-Jk-Sii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dco-k9-1mY" secondAttribute="bottom" constant="20" id="Gse-op-qD5"/>
+                            <constraint firstItem="dco-k9-1mY" firstAttribute="height" secondItem="lJR-rZ-e1e" secondAttribute="height" id="SKR-Uo-EPn"/>
+                            <constraint firstItem="lJR-rZ-e1e" firstAttribute="centerX" secondItem="lmY-6F-ibP" secondAttribute="centerX" id="b81-fP-Bwi"/>
+                            <constraint firstItem="lJR-rZ-e1e" firstAttribute="top" secondItem="lmY-6F-ibP" secondAttribute="bottom" constant="30" id="nhg-n0-JPm"/>
+                            <constraint firstItem="lJR-rZ-e1e" firstAttribute="height" secondItem="lmY-6F-ibP" secondAttribute="height" id="rUm-KJ-Be2"/>
+                            <constraint firstItem="lmY-6F-ibP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="uIP-y4-S0C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YD7-hb-lmU"/>
+                    <connections>
+                        <outlet property="button1" destination="lmY-6F-ibP" id="YpR-mw-yBI"/>
+                        <outlet property="button2" destination="lJR-rZ-e1e" id="xgO-bV-S3a"/>
+                        <outlet property="button3" destination="dco-k9-1mY" id="k4V-ce-ZHv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L9d-2J-4aM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DIo-Tq-IlL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oIs-zp-2fj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7lW-58-f0v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7j3-hq-dIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bangladesh" width="200" height="100"/>
+    </resources>
+</document>
